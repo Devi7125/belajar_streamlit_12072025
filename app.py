@@ -23,5 +23,12 @@ chart_data = pd.DataFrame(
 
 st.line_chart(chart_data, x="col1", y="col2", color="col3")
 
-VIDEO_URL = "https://example.com/not-youtube.mp4"
-st.video(VIDEO_URL, subtitles="subtitles.vtt")
+vertical_alignment = st.selectbox(
+    "Vertical alignment", ["top", "center", "bottom"], index=2
+)
+
+left, middle, right = st.columns(3, vertical_alignment=vertical_alignment)
+left.image("https://static.streamlit.io/examples/cat.jpg")
+middle.image("https://static.streamlit.io/examples/dog.jpg")
+right.image("https://static.streamlit.io/examples/owl.jpg")
+
