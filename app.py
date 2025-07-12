@@ -21,6 +21,8 @@ chart_data = pd.DataFrame(
     }
 )
 
+st.success('This is a success message!', icon="✅")
+
 st.line_chart(chart_data, x="col1", y="col2", color="col3")
 
 vertical_alignment = st.selectbox(
