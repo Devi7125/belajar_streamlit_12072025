@@ -22,3 +22,6 @@ chart_data = pd.DataFrame(
 )
 
 st.line_chart(chart_data, x="col1", y="col2", color="col3")
+
+VIDEO_URL = "https://example.com/not-youtube.mp4"
+st.video(VIDEO_URL, subtitles="subtitles.vtt")
