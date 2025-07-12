@@ -20,6 +20,7 @@ chart_data = pd.DataFrame(
         "col3": np.random.choice(["A", "B", "C"], 20),
     }
 )
+st.text("This is text\n[and more text](that's not a Markdown link).")
 
 st.success('This is a success message!', icon="✅")
 
