@@ -35,3 +35,5 @@ left.image("https://static.streamlit.io/examples/cat.jpg")
 middle.image("https://static.streamlit.io/examples/dog.jpg")
 right.image("https://static.streamlit.io/examples/owl.jpg")
 
+st.text("This is text\n[and more text](that's not a Markdown link).")
+
